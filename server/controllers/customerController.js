@@ -16,3 +16,14 @@ exports.homepage = async (req, res) =>{
     }
  res.render('index', locals);
 };
+
+
+exports.addCustomer= async (req, res) =>{
+
+
+    const locals = {
+        title: 'Add New Customer - NodeJs',
+        description: 'Free Nodejs User Management System'
+    }
+ res.render('customer/add', locals);
+};
