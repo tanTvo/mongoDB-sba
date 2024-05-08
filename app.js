@@ -7,7 +7,7 @@ const connectDB = require('./server/config/db')
 
 const app = express();
 const port = 5001 || process.env.PORT;
-
+//database
 connectDB();
 
 app.use(express.urlencoded({extended: true}));
